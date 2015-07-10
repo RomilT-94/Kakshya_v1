@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_overflow"
+        android:icon="@drawable/ic_overflow"
+        android:orderInCategory="11111"
+        android:showAsAction="always"
+        android:title="Overflow">
+        <menu>
+            <item
+                android:id="@+id/Feedback"
+                android:showAsAction="never"
+                android:title="Give Feedback"/>
+            <item
+                android:id="@+id/Register"
+                android:showAsAction="never"
+                android:title="Register Your NGO"/>
+            <item
+                android:id="@+id/Help"
+                android:showAsAction="never"
+                android:title="Help"/>
+            <item
+                android:id="@+id/Rate"
+                android:showAsAction="never"
+                android:title="Rate"/>
+            <item
+                android:id="@+id/About"
+                android:showAsAction="never"
+                android:title="About Us"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/app_share"
+        android:icon="@drawable/ic_action_share"
+        android:showAsAction="always"
+        android:title="Share"/>
+
+</menu>

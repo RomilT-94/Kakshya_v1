@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/lib/com.google.android.gms.plus"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="20dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/about_one"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="KAKSHYA is an effort to connect donors/volunteers with various non-profit organizations. With growing awareness for various social causes as evident by the popularity of Satyamev Jayate, there is a need for providing a user friendly channel for people to become a part of initiatives that interest them. So, we targeted the current most accessible mode of communication, Smartphones. We have successfully developed an application for the Android Ecosystem and are in the process of developing it for other platforms as well. The application will be an encyclopedia of NGOs containing relevant information along with a portal facilitating monetary as well as service contributions. It will contain basic details of a NGO like date of establishment, domain of service, contact information and a brief description."
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="To know more, visit us at :- "
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:text="www.kakshya.in"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.plus.PlusOneButton
+        xmlns:plus="http://schemas.android.com/apk/lib/com.google.android.gms.plus"
+        android:id="@+id/plus_one_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="38dp"
+        android:layout_toRightOf="@+id/imageView1"
+        app:annotation="inline"
+        plus:size="standard" >
+    </com.google.android.gms.plus.PlusOneButton>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/kakshya_logo" />
+
+</RelativeLayout>

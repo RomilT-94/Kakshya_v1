@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llHelp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="110dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Main Content"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvCommonButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+                android:text="Main Button"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/llTranslation"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llT"
+            android:layout_width="fill_parent"
+            android:layout_height="270dp"
+            android:background="@color/orange"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvTitleHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="60dp"
+                android:text="Help Options"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/tvTagHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="90dp"
+                android:text="Donate. Share. Feedback"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <com.gc.materialdesign.views.ButtonFloat
+            android:id="@+id/bSha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#1E88E5"
+            materialdesign:iconDrawable="@drawable/ic_action_share1" >
+        </com.gc.materialdesign.views.ButtonFloat>
+
+        <com.gc.materialdesign.views.ButtonFloat
+            android:id="@+id/bDona"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:background="#1E88E5"
+            materialdesign:iconDrawable="@drawable/ic_rupee" >
+        </com.gc.materialdesign.views.ButtonFloat>
+
+        <com.gc.materialdesign.views.ButtonFloat
+            android:id="@+id/bFeedb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:background="#1E88E5"
+            materialdesign:iconDrawable="@drawable/ic_feedback_help" >
+        </com.gc.materialdesign.views.ButtonFloat>
+    </RelativeLayout>
+
+</RelativeLayout>

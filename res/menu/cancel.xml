@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <!-- Map Feature -->
+    <item
+        android:id="@+id/action_clear"
+        android:icon="@drawable/ic_clear"
+        android:showAsAction="always"
+        android:title="Back"/>
+
+</menu>

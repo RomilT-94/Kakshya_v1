@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/etSearchString"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:background="#dbd4d4"
+        android:ems="10"
+        android:hint="Enter part/full name of Organisation"
+        android:padding="10dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <com.gc.materialdesign.views.ButtonFlat
+        android:id="@+id/buttonflatSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/etSearchString"
+        android:layout_below="@+id/etSearchString"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="26dp"
+        android:background="#1E88E5"
+        android:text="Search" >
+    </com.gc.materialdesign.views.ButtonFlat>
+
+    <com.gc.materialdesign.views.ButtonFlat
+        android:id="@+id/buttonflatCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonflatSearch"
+        android:layout_marginBottom="16dp"
+        android:layout_toLeftOf="@+id/buttonflatSearch"
+        android:background="#1E88E5"
+        android:text="Cancel" >
+    </com.gc.materialdesign.views.ButtonFlat>
+
+</RelativeLayout>

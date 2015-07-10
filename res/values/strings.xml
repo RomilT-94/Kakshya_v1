@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Kakshya</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title">title</string>
+    <string name="received"><u>Received</u></string>
+    <string name="sent"><u>Sent</u></string>
+    <string name="latest">Latest</string>
+    <string name="previous">Previous</string>
+    <string name="delta">Delta</string>
+    <string name="device"><i>(device)</i></string>
+    <string name="ngo_icon">ngo_icon</string>
+    <string name="contact_address">CONTACT</string>
+    <string name="email">EMAIL</string>
+    <string name="phone">PHONE</string>
+    <string name="website">WEBSITE</string>
+    <string name="area_of_service">AREA OF SERVICE</string>
+    <string name="date_of_formation">DATE FORMED</string>
+    <string name="hoo">HEAD</string>
+    <string name="bd">DETAILS</string>
+    <string name="don">DONATE NOW</string>
+    <string name="rltwul">Love the Way You Lie</string>
+    <string name="facebook_app_id">815869208475179</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="about_one">WadersGroup is a startup company based out of NIT Sikkim and with KAKSHYA we are doing our bit to help the society. We ask you to help us in our effort.</string>
+
+</resources>

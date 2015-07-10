@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4.6" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.35" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ivLogo"
+            android:paddingLeft="10dp"
+            android:text="@string/title"
+            android:textColor="#000000"
+            android:textIsSelectable="true"
+            android:textSize="17sp"
+            android:textStyle="normal|bold" />
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/ngo_icon"
+            android:src="@drawable/arrow" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.35"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <ImageButton
+            android:id="@+id/ibCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/ngo_icon"
+            android:src="@drawable/ic_action_call" />
+
+        <ImageButton
+            android:id="@+id/ibWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/ngo_icon"
+            android:src="@drawable/ic_action_web_site" />
+
+        <ImageButton
+            android:id="@+id/ibFavo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/ngo_icon"
+            android:src="@drawable/ic_action_star" />
+
+        <ImageButton
+            android:id="@+id/ibMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/ngo_icon"
+            android:src="@drawable/ic_action_mail" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.60" >
+
+        <RelativeLayout
+            android:id="@+id/layout_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/linearLayout1"
+                android:layout_alignRight="@+id/linearLayout1"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/ctct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:paddingLeft="30dp"
+                    android:text="@string/contact_address"
+                    android:textColor="#000000"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvArtist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ctct"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/contact_address"
+                    android:textColor="#000000"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvArtist"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="30dp"
+                    android:text="@string/email"
+                    android:textColor="#000000"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mail"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/email"
+                    android:textColor="#000000"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/phne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvEmail"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="30dp"
+                    android:text="@string/phone"
+                    android:textColor="#000000"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/phne"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/phone"
+                    android:textColor="#000000"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/web"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvPhone"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="30dp"
+                    android:text="@string/website"
+                    android:textColor="#000000"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvWebsite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/web"
+                    android:layout_marginLeft="30dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/website"
+                    android:textColor="#000000"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="14dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="30dp"
+                    android:text="@string/area_of_service"
+                    android:textColor="#000000"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvAos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:text="@string/area_of_service"
+                    android:textColor="#000000"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:paddingLeft="30dp"
+                    android:text="@string/date_of_formation"
+                    android:textColor="#000000"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDof"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:text="@string/date_of_formation"
+                    android:textColor="#000000"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:paddingLeft="30dp"
+                    android:text="@string/hoo"
+                    android:textColor="#000000"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvHoo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="30dp"
+                    android:text="@string/hoo"
+                    android:textColor="#000000"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="0dp"
+                    android:text="@string/bd"
+                    android:textColor="#000000"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/bd"
+                    android:textColor="#000000"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.30" >
+
+        <Button
+            android:id="@+id/bDonate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/orange"
+            android:text="@string/don"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.gc.materialdesign.views.ButtonFloat
+            android:id="@+id/bAddToContacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:background="#1E88E5"
+            materialdesign:animate="false"
+            materialdesign:iconDrawable="@drawable/ic_contacts" >
+        </com.gc.materialdesign.views.ButtonFloat>
+    </RelativeLayout>
+
+</LinearLayout>

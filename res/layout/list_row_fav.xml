@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EEEEEE"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/list_selector"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <!-- ListRow Left sided Thumbnail image -->
+
+        <LinearLayout
+            android:id="@+id/thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/image_bg"
+            android:padding="3dip" >
+
+            <ImageButton
+                android:id="@+id/list_image"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/ngo_icon"
+                android:src="@drawable/rihanna" />
+        </LinearLayout>
+
+        <!-- Title Of Song -->
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/thumbnail"
+            android:layout_marginBottom="18dp"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:text="@string/rltwul"
+            android:textColor="#040404"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <ImageButton
+            android:id="@+id/ibListFavOverflow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/transparent"
+            android:paddingBottom="16dp"
+            android:paddingLeft="100dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/ic_overflow" />
+    </RelativeLayout>
+
+</RelativeLayout>
